@@ -85,7 +85,7 @@ span.alt-logo-text {
   border: 1px solid #FF7C0F;
 }
 
-@media only screen and (max-width: 707px) {/* ruleset for 800px and below*/
+@media only screen and (max-width: 707px) {/* ruleset for 707px and below*/
   header.desktop {
     display: none;
   }
@@ -107,11 +107,10 @@ span.alt-logo-text {
     align-items: center;
     height: 4rem;
     padding: 0 1.5rem;
-    border: 1px solid red;
   }
 }
 
-@media only screen and (min-width: 708px) {/* ruleset for above 800px*/
+@media only screen and (min-width: 708px) {/* ruleset for above 707px*/
   header.mobile {
     display: none;
   }
@@ -121,7 +120,6 @@ span.alt-logo-text {
 section.banner {
   background-color: #101335;
   margin-top: 4rem;
-  border: 1px solid red;
 }
 
 div.banner-image {
@@ -178,14 +176,40 @@ div.button a:hover {
   color: #fff;
 }
 
-@media only screen and (min-width: 481px) {/* ruleset for above 800px*/
-  .mobile-banner-image,
-  .mobile-learn {
-    display: none;
+@media only screen and (min-width: 481px) {/* ruleset for above 481px*/
+.mobile-banner-image,
+.mobile-learn {
+  display: none;
+ }
+}
+@media only screen and (max-width: 795px) {
+  div.button {
+    width: 90%;
+  }
+  div.button a {
+    padding: 0.9rem 0.3rem;
+  }
+  div.learn h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  div.learn h3 {
+    font-size: 1rem;
+    margin: 2rem 0;
   }
 }
 
-@media only screen and (max-width: 480px) {/* ruleset for 800px and below*/
+@media only screen and (max-width: 600px) {
+  div.learn h1,
+  div.learn h3 {
+    display: none;
+  }
+  div.button {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {/* ruleset for 480px and below*/
 
   .banner.desktop {
     display: none;
@@ -235,7 +259,6 @@ div.button a:hover {
 /*INFORMATION SECTION*/
 section#campus {
   color: #424A59;
-  border: 1px solid red;
 }
 
 div.testimonial {
@@ -322,6 +345,16 @@ div.thumbnail img {
     display: none;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  div.information .thumbnail {
+    display: none;
+  }
+  div.info-right .column {
+    margin-left: 0.5rem;
+  }
+}
+
 @media only screen and (max-width: 480px) {/* ruleset for 800px and below*/
 
   .main-info.desktop {
@@ -368,7 +401,6 @@ section.learning {
   -ms-flex-align: center;
   -ms-grid-row-align: center;
   align-items: center;
-  border: 1px solid red;
 }
 
 section.learning h2 {
@@ -482,7 +514,6 @@ h2.section-heading {
 
 .thesis {
   margin: 2rem 0 2rem 1.5rem;
-  border: 1px solid red;
 }
 
 .thesis-video {
@@ -541,6 +572,19 @@ h2.section-heading {
     display: none;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .project-thumbnail {
+    display: none;
+  }
+  .project-detail {
+    margin-left: 0.5rem;
+  }
+  .project-detail h4 {
+    margin-bottom: 1rem;
+  }
+}
+
 @media only screen and (max-width: 480px) {/* ruleset for 800px and below*/
   .thesis.desktop {
     display: none;
@@ -560,9 +604,7 @@ h2.section-heading {
 }
 
 /*FOOTER SECTION*/
-footer {
-  border: 1px solid red;
-}
+
 footer hr {
   width: 99%;
   border-style: outset;
